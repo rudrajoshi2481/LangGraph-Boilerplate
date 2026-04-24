@@ -21,4 +21,6 @@ ollama pull llama2
 ```
 # use this command to run it
 
+```bash
 AGENT_DEBUG=1 python ./app.py
+```
