@@ -2,6 +2,8 @@
 
 A super simple integration of langgraph with redis and ollama, can be tuned in future for specific use cases
 
+![Agents](./qa_graph.png)
+
 ## Setup
 
 1. Install dependencies:
@@ -24,3 +26,5 @@ ollama pull llama2
 ```bash
 AGENT_DEBUG=1 python ./app.py
 ```
+
+
