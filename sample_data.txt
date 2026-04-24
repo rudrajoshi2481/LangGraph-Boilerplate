@@ -1,0 +1,117 @@
+
+## States Collection
+[
+  {"_id": "NY", "name": "New York", "population": 20200000, "rank": 4},
+  {"_id": "CA", "name": "California", "population": 39500000, "rank": 1},
+  {"_id": "TX", "name": "Texas", "population": 29100000, "rank": 2},
+  {"_id": "FL", "name": "Florida", "population": 21500000, "rank": 3},
+  {"_id": "PA", "name": "Pennsylvania", "population": 13000000, "rank": 5},
+  {"_id": "IL", "name": "Illinois", "population": 12800000, "rank": 6},
+  {"_id": "OH", "name": "Ohio", "population": 11700000, "rank": 7},
+  {"_id": "GA", "name": "Georgia", "population": 10700000, "rank": 8},
+  {"_id": "NC", "name": "North Carolina", "population": 10400000, "rank": 9},
+  {"_id": "MI", "name": "Michigan", "population": 10000000, "rank": 10}
+]
+
+## Universities Collection (Year 2020)
+[
+  {"name": "Columbia University", "stateId": "NY", "year": 2020, "enrolled": 31782, "graduated": 8154},
+  {"name": "New York University", "stateId": "NY", "year": 2020, "enrolled": 54455, "graduated": 11297},
+  {"name": "Stanford University", "stateId": "CA", "year": 2020, "enrolled": 17188, "graduated": 5234},
+  {"name": "University of California, Berkeley", "stateId": "CA", "year": 2020, "enrolled": 43204, "graduated": 10231},
+  {"name": "University of California, Los Angeles", "stateId": "CA", "year": 2020, "enrolled": 45742, "graduated": 8965},
+  {"name": "University of Texas at Austin", "stateId": "TX", "year": 2020, "enrolled": 50825, "graduated": 13490},
+  {"name": "Texas A&M University", "stateId": "TX", "year": 2020, "enrolled": 68825, "graduated": 15234},
+  {"name": "University of Florida", "stateId": "FL", "year": 2020, "enrolled": 54346, "graduated": 11234},
+  {"name": "Florida State University", "stateId": "FL", "year": 2020, "enrolled": 45678, "graduated": 9876},
+  {"name": "University of Pennsylvania", "stateId": "PA", "year": 2020, "enrolled": 28734, "graduated": 8234},
+  {"name": "Pennsylvania State University", "stateId": "PA", "year": 2020, "enrolled": 76543, "graduated": 14567},
+  {"name": "University of Chicago", "stateId": "IL", "year": 2020, "enrolled": 18765, "graduated": 4567},
+  {"name": "Northwestern University", "stateId": "IL", "year": 2020, "enrolled": 22345, "graduated": 6789},
+  {"name": "Ohio State University", "stateId": "OH", "year": 2020, "enrolled": 61234, "graduated": 12345},
+  {"name": "University of Michigan", "stateId": "MI", "year": 2020, "enrolled": 48956, "graduated": 9876}
+]
+
+## Aggregated Results (universities_by_state pipeline output)
+[
+  {
+    "_id": "NY",
+    "totalEnrolled": 86237,
+    "totalGraduated": 19451,
+    "universitiesCount": 2,
+    "stateName": "New York",
+    "statePopulation": 20200000,
+    "stateRank": 4
+  },
+  {
+    "_id": "CA",
+    "totalEnrolled": 105634,
+    "totalGraduated": 24430,
+    "universitiesCount": 3,
+    "stateName": "California",
+    "statePopulation": 39500000,
+    "stateRank": 1
+  },
+  {
+    "_id": "TX",
+    "totalEnrolled": 119650,
+    "totalGraduated": 28724,
+    "universitiesCount": 2,
+    "stateName": "Texas",
+    "statePopulation": 29100000,
+    "stateRank": 2
+  },
+  {
+    "_id": "FL",
+    "totalEnrolled": 100024,
+    "totalGraduated": 21110,
+    "universitiesCount": 2,
+    "stateName": "Florida",
+    "statePopulation": 21500000,
+    "stateRank": 3
+  },
+  {
+    "_id": "PA",
+    "totalEnrolled": 105277,
+    "totalGraduated": 22801,
+    "universitiesCount": 2,
+    "stateName": "Pennsylvania",
+    "statePopulation": 13000000,
+    "stateRank": 5
+  },
+  {
+    "_id": "IL",
+    "totalEnrolled": 41110,
+    "totalGraduated": 11356,
+    "universitiesCount": 2,
+    "stateName": "Illinois",
+    "statePopulation": 12800000,
+    "stateRank": 6
+  },
+  {
+    "_id": "OH",
+    "totalEnrolled": 61234,
+    "totalGraduated": 12345,
+    "universitiesCount": 1,
+    "stateName": "Ohio",
+    "statePopulation": 11700000,
+    "stateRank": 7
+  },
+  {
+    "_id": "MI",
+    "totalEnrolled": 48956,
+    "totalGraduated": 9876,
+    "universitiesCount": 1,
+    "stateName": "Michigan",
+    "statePopulation": 10000000,
+    "stateRank": 10
+  }
+]
+
+## Summary Statistics
+- Total States: 10
+- Total Universities: 15
+- Total Students Enrolled (2020): 768,422
+- Total Graduates (2020): 148,473
+- Average Enrollment per University: 51,228
+- Average Graduation Rate: 19.3%
